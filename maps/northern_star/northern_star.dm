@@ -1,6 +1,7 @@
 #if !defined(USING_MAP_DATUM)
 
 	#include "polaris-1.dmm"
+	#include "polaris-1-residential.dmm"
 	#include "polaris-2.dmm"
 	#include "polaris-3.dmm"
 	#include "polaris-4.dmm"

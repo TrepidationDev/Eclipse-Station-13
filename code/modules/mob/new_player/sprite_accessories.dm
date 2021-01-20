@@ -49,6 +49,18 @@
 	var/icon_add = 'icons/mob/human_face.dmi'
 	var/flags
 
+	afro
+		name = "Afro"
+		icon_state = "hair_afro"
+
+	afro2
+		name = "Afro 2"
+		icon_state = "hair_afro2"
+
+	afro_large
+		name = "Afro Big"
+		icon_state = "hair_bigafro"
+
 	bald
 		name = "Bald"
 		icon_state = "bald"
@@ -56,167 +68,6 @@
 		flags = HAIR_VERY_SHORT
 		species_allowed = list("Human","Unathi","Promethean","Vatborn")
 		species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI,SPECIES_PROMETHEAN,SPECIES_HUMAN_VATBORN,SPECIES_VOX)
-
-	short
-		name = "Short Hair"	  // try to capatilize the names please~
-		icon_state = "hair_a" // you do not need to define _s or _l sub-states, game automatically does this for you
-		flags = HAIR_VERY_SHORT
-
-	short2
-		name = "Short Hair 2"
-		icon_state = "hair_shorthair3"
-		flags = HAIR_VERY_SHORT
-
-	short3
-		name = "Short Hair 3"
-		icon_state = "hair_shorthair4"
-		flags = HAIR_VERY_SHORT
-
-	twintail
-		name = "Twintail"
-		icon_state = "hair_twintail"
-		flags = HAIR_TIEABLE
-
-	cut
-		name = "Cut Hair"
-		icon_state = "hair_c"
-		flags = HAIR_VERY_SHORT
-
-	flair
-		name = "Flaired Hair"
-		icon_state = "hair_flair"
-		flags = HAIR_TIEABLE
-
-	long
-		name = "Shoulder-length Hair"
-		icon_state = "hair_b"
-		flags = HAIR_TIEABLE
-
-/*
-	longish
-		name = "Longer Hair"
-		icon_state = "hair_b2"
-		flags = HAIR_TIEABLE
-*/
-	longer
-		name = "Long Hair"
-		icon_state = "hair_vlong"
-		flags = HAIR_TIEABLE
-
-	longeralt2
-		name = "Long Hair Alt 2"
-		icon_state = "hair_longeralt2"
-		flags = HAIR_TIEABLE
-
-	longest
-		name = "Very Long Hair"
-		icon_state = "hair_longest"
-		flags = HAIR_TIEABLE
-
-	longfringe
-		name = "Long Fringe"
-		icon_state = "hair_longfringe"
-		flags = HAIR_TIEABLE
-
-	longestalt
-		name = "Longer Fringe"
-		icon_state = "hair_vlongfringe"
-		flags = HAIR_TIEABLE
-
-	halfbang
-		name = "Half-banged Hair"
-		icon_state = "hair_halfbang"
-
-	halfbangalt
-		name = "Half-banged Hair Alt"
-		icon_state = "hair_halfbang_alt"
-
-	ponytail1
-		name = "Ponytail 1"
-		icon_state = "hair_ponytail"
-		flags = HAIR_TIEABLE|HAIR_VERY_SHORT
-
-	ponytail2
-		name = "Ponytail 2"
-		icon_state = "hair_pa"
-		flags = HAIR_TIEABLE
-
-	ponytail3
-		name = "Ponytail 3"
-		icon_state = "hair_ponytail3"
-		flags = HAIR_TIEABLE
-
-	ponytail4
-		name = "Ponytail 4"
-		icon_state = "hair_ponytail4"
-		flags = HAIR_TIEABLE
-
-	ponytail5
-		name = "Ponytail 5"
-		icon_state = "hair_ponytail5"
-		flags = HAIR_TIEABLE
-
-	ponytail6
-		name = "Ponytail 6"
-		icon_state = "hair_ponytail6"
-		flags = HAIR_TIEABLE|HAIR_VERY_SHORT
-
-	fringetail
-		name = "Fringetail"
-		icon_state = "hair_fringetail"
-		flags = HAIR_TIEABLE|HAIR_VERY_SHORT
-
-	sideponytail
-		name = "Side Ponytail"
-		icon_state = "hair_stail"
-		flags = HAIR_TIEABLE
-
-	sideponytail4 //Not happy about this... but it's for the save files.
-		name = "Side Ponytail 2"
-		icon_state = "hair_ponytailf"
-		flags = HAIR_TIEABLE
-
-	sideponytail2
-		name = "One Shoulder"
-		icon_state = "hair_oneshoulder"
-		flags = HAIR_TIEABLE
-
-	sideponytail3
-		name = "Tress Shoulder"
-		icon_state = "hair_tressshoulder"
-		flags = HAIR_TIEABLE
-
-	spikyponytail
-		name = "Spiky Ponytail"
-		icon_state = "hair_spikyponytail"
-		flags = HAIR_TIEABLE
-
-	zieglertail
-		name = "Zieglertail"
-		icon_state = "hair_ziegler"
-		flags = HAIR_TIEABLE
-
-	wisp
-		name = "Wisp"
-		icon_state = "hair_wisp"
-		flags = HAIR_TIEABLE
-
-	parted
-		name = "Parted"
-		icon_state = "hair_parted"
-
-	pompadour
-		name = "Pompadour"
-		icon_state = "hair_pompadour"
-
-	sleeze
-		name = "Sleeze"
-		icon_state = "hair_sleeze"
-		flags = HAIR_VERY_SHORT
-
-	quiff
-		name = "Quiff"
-		icon_state = "hair_quiff"
 
 	bedhead
 		name = "Bedhead"
@@ -259,7 +110,7 @@
 		flags = HAIR_TIEABLE
 
 	bobcutalt
-		name = "Chin Length Bob"
+		name = "Bob Chin Length "
 		icon_state = "hair_bobcutalt"
 		flags = HAIR_TIEABLE
 
@@ -279,6 +130,10 @@
 		name = "Bowl"
 		icon_state = "hair_bowlcut"
 
+	bowlcut2
+		name = "Bowl 2"
+		icon_state = "hair_bowlcut2"
+
 	buzz
 		name = "Buzzcut"
 		icon_state = "hair_buzzcut"
@@ -286,9 +141,61 @@
 		species_allowed = list(SPECIES_HUMAN,SPECIES_PROMETHEAN,SPECIES_HUMAN_VATBORN,SPECIES_UNATHI)
 		species_allowed = list("Human","Promethean","Vatborn","Unathi")
 
-	shavehair
-		name = "Shaved Hair"
-		icon_state = "hair_shaved"
+	mbraid
+		name = "Braid Medium"
+		icon_state = "hair_shortbraid"
+		flags = HAIR_TIEABLE
+
+	braid2
+		name = "Long Braid"
+		icon_state = "hair_hbraid"
+		flags = HAIR_TIEABLE
+
+	braid
+		name = "Braid Floorlenght"
+		icon_state = "hair_braid"
+		flags = HAIR_TIEABLE
+
+	balding
+		name = "Balding"
+		icon_state = "hair_e"
+		gender = MALE
+		flags = HAIR_VERY_SHORT
+
+	baldfade
+		name = "Balding Fade"
+		icon_state = "hair_baldfade"
+		gender = MALE
+		flags = HAIR_VERY_SHORT
+
+	business_2
+		name = "Business"
+		icon_state = "hair_business2"
+		flags = HAIR_TIEABLE
+
+	belenko
+		name = "Belenko"
+		icon_state = "hair_belenko"
+		flags = HAIR_TIEABLE
+
+	belenkotied
+		name = "Belenko Tied"
+		icon_state = "hair_belenkotied"
+		flags = HAIR_TIEABLE
+
+	belenkotied
+		name = "Belenko Tied 2"
+		icon_state = "hair_supernova"
+		flags = HAIR_TIEABLE
+
+	casualbun
+		name = "Casual Bun"
+		icon_state = "hair_bun"
+		flags = HAIR_TIEABLE
+
+		cut
+		name = "Cut Formal"
+		icon_state = "hair_c"
 		flags = HAIR_VERY_SHORT
 
 	crew
@@ -300,13 +207,28 @@
 		name = "Combover"
 		icon_state = "hair_combover"
 
-	father
-		name = "Father"
-		icon_state = "hair_father"
+	country
+		name = "Country"
+		icon_state = "hair_country"
 
-	reversemohawk
-		name = "Reverse Mohawk"
-		icon_state = "hair_reversemohawk"
+	curls
+		name = "Curls"
+		icon_state = "hair_curls"
+		flags = HAIR_TIEABLE
+
+	crono
+		name = "Chrono"
+		icon_state = "hair_toriyama"
+
+	cia
+		name = "CIA"
+		icon_state = "hair_cia"
+
+	coffeehouse
+		name = "Coffee House Cut"
+		icon_state = "hair_coffeehouse"
+		gender = MALE
+		flags = HAIR_VERY_SHORT
 
 	devillock
 		name = "Devil Lock"
@@ -316,44 +238,25 @@
 		name = "Dreadlocks"
 		icon_state = "hair_dreads"
 
-	curls
-		name = "Curls"
-		icon_state = "hair_curls"
+	dandypomp
+		name = "Dandy Pompadour"
+		icon_state = "hair_dandypompadour"
+
+	doublebun
+		name = "Double-Bun"
+		icon_state = "hair_doublebun"
 		flags = HAIR_TIEABLE
 
-	afro
-		name = "Afro"
-		icon_state = "hair_afro"
-
-	afro2
-		name = "Afro 2"
-		icon_state = "hair_afro2"
-
-	afro_large
-		name = "Big Afro"
-		icon_state = "hair_bigafro"
-
-	rows
-		name = "Rows"
-		icon_state = "hair_rows1"
-		flags = HAIR_VERY_SHORT
-
-	rows2
-		name = "Rows 2"
-		icon_state = "hair_rows2"
-		flags = HAIR_TIEABLE
-
-	sargeant
-		name = "Flat Top"
-		icon_state = "hair_sargeant"
-		flags = HAIR_VERY_SHORT
+	dave
+		name = "Dave"
+		icon_state = "hair_dave"
 
 	emo
 		name = "Emo"
 		icon_state = "hair_emo"
 
 	emo2
-		name = "Emo Alt"
+		name = "Emo 2"
 		icon_state = "hair_emo2"
 
 	longemo
@@ -362,29 +265,35 @@
 		flags = HAIR_TIEABLE
 
 	fringeemo
-		name = "Emo Fringe"
+		name = "Fringe Emo"
 		icon_state = "hair_emofringe"
 		flags = HAIR_TIEABLE
 
-	veryshortovereyealternate
-		name = "Overeye Very Short, Alternate"
-		icon_state = "hair_veryshortovereyealternate"
+	flair
+		name = "Flaired"
+		icon_state = "hair_flair"
+		flags = HAIR_TIEABLE
 
-	veryshortovereye
-		name = "Overeye Very Short"
-		icon_state = "hair_veryshortovereye"
+	fringetail
+		name = "Fringetail"
+		icon_state = "hair_fringetail"
+		flags = HAIR_TIEABLE|HAIR_VERY_SHORT
 
-	shortovereye
-		name = "Overeye Short"
-		icon_state = "hair_shortovereye"
+	father
+		name = "Father"
+		icon_state = "hair_father"
 
-	longovereye
-		name = "Overeye Long"
-		icon_state = "hair_longovereye"
+	familyman
+		name = "Family Man"
+		icon_state = "hair_thefamilyman"
+
+	fringeemo
+		name = "Fringe Emo"
+		icon_state = "hair_emofringe"
 		flags = HAIR_TIEABLE
 
 	flowhair
-		name = "Flow Hair"
+		name = "Flow"
 		icon_state = "hair_f"
 
 	feather
@@ -392,18 +301,14 @@
 		icon_state = "hair_feather"
 		flags = HAIR_TIEABLE
 
-	hitop
-		name = "Hitop"
-		icon_state = "hair_hitop"
+	fringetail
+		name = "Fringetail"
+		icon_state = "hair_fringetail"
 
-	mohawk
-		name = "Mohawk"
-		icon_state = "hair_d"
-		species_allowed = list("Human","Promethean","Vatborn","Unathi")
-
-	jensen
-		name = "Adam Jensen Hair"
-		icon_state = "hair_jensen"
+	grandebraid
+		name = "Grande Braid"
+		icon_state = "hair_grande"
+		flags = HAIR_TIEABLE
 
 	gelled
 		name = "Gelled Back"
@@ -414,13 +319,56 @@
 		icon_state = "hair_gentle"
 		flags = HAIR_TIEABLE
 
-	spiky
-		name = "Spiky"
-		icon_state = "hair_spikey"
-		species_allowed = list("Human","Promethean","Vatborn","Unathi")
+	halfbang
+		name = "Half-banged"
+		icon_state = "hair_halfbang"
+
+	halfbangalt
+		name = "Half-banged Alt"
+		icon_state = "hair_halfbang_alt"
+
+	hitop
+		name = "Hitop"
+		icon_state = "hair_hitop"
+
+	himecut
+		name = "Hime Cut"
+		icon_state = "hair_himecut"
+		flags = HAIR_TIEABLE
+
+	halfshaved
+		name = "Half-Shaved Emo"
+		icon_state = "hair_halfshaved"
+
+	highfade
+		name = "High Fade"
+		icon_state = "hair_highfade"
+		gender = MALE
+		flags = HAIR_VERY_SHORT
+
+	hightight
+		name = "High and Tight"
+		icon_state = "hair_hightight"
+		flags = HAIR_VERY_SHORT
+
+	hedgehog
+		name = "Hedgehog Hair"
+		icon_state = "hair_hedgehog"
+
+	jensen
+		name = "Jensen"
+		icon_state = "hair_jensen"
+
+	joestar
+		name = "Joestar"
+		icon_state = "hair_joestar"
+
+	jade
+		name = "Jade"
+		icon_state = "hair_jade"
 
 	kusangi
-		name = "Kusanagi Hair"
+		name = "Kusanagi"
 		icon_state = "hair_kusanagi"
 
 	kagami
@@ -428,34 +376,112 @@
 		icon_state = "hair_kagami"
 		flags = HAIR_TIEABLE
 
-	himecut
-		name = "Hime Cut"
-		icon_state = "hair_himecut"
+	keanu
+		name = "Keanu"
+		icon_state = "hair_keanu"
 		flags = HAIR_TIEABLE
 
-	shorthime
-		name = "Short Hime Cut"
-		icon_state = "hair_shorthime"
+	longish
+		name = "Longer Hair"
+		icon_state = "hair_b2"
 		flags = HAIR_TIEABLE
 
-	grandebraid
-		name = "Grande Braid"
-		icon_state = "hair_grande"
+	longer
+		name = "Long"
+		icon_state = "hair_vlong"
 		flags = HAIR_TIEABLE
 
-	mbraid
-		name = "Medium Braid"
-		icon_state = "hair_shortbraid"
+	longeralt2
+		name = "Long Tied"
+		icon_state = "hair_longeralt2"
 		flags = HAIR_TIEABLE
 
-	braid2
-		name = "Long Braid"
-		icon_state = "hair_hbraid"
+	longest
+		name = "Longest"
+		icon_state = "hair_longest"
 		flags = HAIR_TIEABLE
 
-	braid
-		name = "Floorlength Braid"
-		icon_state = "hair_braid"
+	longfringe
+		name = "Long Fringe"
+		icon_state = "hair_longfringe"
+		flags = HAIR_TIEABLE
+
+	longestalt
+		name = "Longer Fringe"
+		icon_state = "hair_vlongfringe"
+		flags = HAIR_TIEABLE
+
+	longemo
+		name = "Long Emo"
+		icon_state = "hair_emolong"
+		flags = HAIR_TIEABLE
+
+	longovereye
+		name = "Long Overeye"
+		icon_state = "hair_longovereye"
+		flags = HAIR_TIEABLE
+
+	lowfade
+		name = "Low Fade"
+		icon_state = "hair_lowfade"
+		gender = MALE
+		flags = HAIR_VERY_SHORT
+
+	long
+		name = "Long 2"
+		icon_state = "hair_b"
+		flags = HAIR_TIEABLE
+
+	long_hair_3
+		name = "Long 3"
+		icon_state = "hair_long3"
+		flags = HAIR_TIEABLE
+
+	mohawk
+		name = "Mohawk"
+		icon_state = "hair_d"
+		species_allowed = list("Human","Promethean","Vatborn","Unathi")
+
+	mahdrills
+		name = "Mad Drills"
+		icon_state = "hair_drillruru"
+
+	mulder
+		name = "Mulder"
+		icon_state = "hair_mulder"
+
+	modern
+		name = "Modern"
+		icon_state = "hair_modern"
+
+	medfade
+		name = "Medium Fade"
+		icon_state = "hair_medfade"
+		flags = HAIR_VERY_SHORT
+
+	manbun
+		name = "Manbun"
+		icon_state = "hair_manbun"
+		flags = HAIR_TIEABLE
+
+	mohawkunshaven
+		name = "Mohawk Unshaven"
+		icon_state = "hair_unshaven_mohawk"
+
+	nofade
+		name = "No Fade"
+		icon_state = "hair_nofade"
+		gender = MALE
+		flags = HAIR_VERY_SHORT
+
+	nia
+		name = "Nia"
+		icon_state = "hair_nia"
+		flags = HAIR_TIEABLE
+
+	nitori
+		name = "Nitori"
+		icon_state = "hair_nitori"
 		flags = HAIR_TIEABLE
 
 	odango
@@ -468,37 +494,47 @@
 		icon_state = "hair_ombre"
 		flags = HAIR_TIEABLE
 
-	updo
-		name = "Updo"
-		icon_state = "hair_updo"
+	oxton
+		name = "Oxton"
+		icon_state = "hair_oxton"
+
+	ponytail1
+		name = "Ponytail"
+		icon_state = "hair_ponytail"
+		flags = HAIR_TIEABLE|HAIR_VERY_SHORT
+
+	ponytail2
+		name = "Ponytail 2"
+		icon_state = "hair_pa"
 		flags = HAIR_TIEABLE
 
-	skinhead
-		name = "Skinhead"
-		icon_state = "hair_skinhead"
-		flags = HAIR_VERY_SHORT
+	ponytail3
+		name = "Ponytail 3"
+		icon_state = "hair_ponytail3"
+		flags = HAIR_TIEABLE
 
-	balding
-		name = "Balding Hair"
-		icon_state = "hair_e"
-		gender = MALE
-		flags = HAIR_VERY_SHORT
+	ponytail4
+		name = "Ponytail 4"
+		icon_state = "hair_ponytail4"
+		flags = HAIR_TIEABLE
 
-	familyman
-		name = "The Family Man"
-		icon_state = "hair_thefamilyman"
+	ponytail5
+		name = "Ponytail 5"
+		icon_state = "hair_ponytail5"
+		flags = HAIR_TIEABLE
 
-	mahdrills
-		name = "Drillruru"
-		icon_state = "hair_drillruru"
+	ponytail6
+		name = "Ponytail 6"
+		icon_state = "hair_ponytail6"
+		flags = HAIR_TIEABLE|HAIR_VERY_SHORT
 
-	fringetail
-		name = "Fringetail"
-		icon_state = "hair_fringetail"
+	parted
+		name = "Parted"
+		icon_state = "hair_parted"
 
-	dandypomp
-		name = "Dandy Pompadour"
-		icon_state = "hair_dandypompadour"
+	pompadour
+		name = "Pompadour"
+		icon_state = "hair_pompadour"
 
 	poofy
 		name = "Poofy"
@@ -510,160 +546,34 @@
 		icon_state = "hair_poofy2"
 		flags = HAIR_TIEABLE
 
-	crono
-		name = "Chrono"
-		icon_state = "hair_toriyama"
-
-	vegeta
-		name = "Vegeta"
-		icon_state = "hair_toriyama2"
-
-	cia
-		name = "CIA"
-		icon_state = "hair_cia"
-
-	mulder
-		name = "Mulder"
-		icon_state = "hair_mulder"
-
-	scully
-		name = "Scully"
-		icon_state = "hair_scully"
-
-	nitori
-		name = "Nitori"
-		icon_state = "hair_nitori"
-		flags = HAIR_TIEABLE
-
-	joestar
-		name = "Joestar"
-		icon_state = "hair_joestar"
-
-	volaju
-		name = "Volaju"
-		icon_state = "hair_volaju"
-		flags = HAIR_TIEABLE
-
-	eighties
-		name = "80's"
-		icon_state = "hair_80s"
-
-	nia
-		name = "Nia"
-		icon_state = "hair_nia"
-		flags = HAIR_TIEABLE
-
-	unkept
-		name = "Unkept"
-		icon_state = "hair_unkept"
-
-	modern
-		name = "Modern"
-		icon_state = "hair_modern"
-
-	shortbangs
-		name = "Short Bangs"
-		icon_state = "hair_shortbangs"
-
-	halfshaved
-		name = "Half-Shaved Emo"
-		icon_state = "hair_halfshaved"
-
-	bun
-		name = "Casual Bun"
-		icon_state = "hair_bun"
-		flags = HAIR_TIEABLE
-
-	doublebun
-		name = "Double-Bun"
-		icon_state = "hair_doublebun"
-		flags = HAIR_TIEABLE
-
-	oxton
-		name = "Oxton"
-		icon_state = "hair_oxton"
-
-	lowfade
-		name = "Low Fade"
-		icon_state = "hair_lowfade"
-		gender = MALE
-		flags = HAIR_VERY_SHORT
-
-	medfade
-		name = "Medium Fade"
-		icon_state = "hair_medfade"
-		flags = HAIR_VERY_SHORT
-
-	highfade
-		name = "High Fade"
-		icon_state = "hair_highfade"
-		gender = MALE
-		flags = HAIR_VERY_SHORT
-
-	baldfade
-		name = "Balding Fade"
-		icon_state = "hair_baldfade"
-		gender = MALE
-		flags = HAIR_VERY_SHORT
-
-	nofade
-		name = "Regulation Cut"
-		icon_state = "hair_nofade"
-		gender = MALE
-		flags = HAIR_VERY_SHORT
-
-	trimflat
-		name = "Trimmed Flat Top"
-		icon_state = "hair_trimflat"
-		gender = MALE
-		flags = HAIR_VERY_SHORT
-
-	trimmed
-		name = "Trimmed"
-		icon_state = "hair_trimmed"
-		gender = MALE
-		flags = HAIR_VERY_SHORT
-
-	tightbun
-		name = "Tight Bun"
-		icon_state = "hair_tightbun"
-		gender = FEMALE
-		flags = HAIR_VERY_SHORT | HAIR_TIEABLE
-
-	coffeehouse
-		name = "Coffee House Cut"
-		icon_state = "hair_coffeehouse"
-		gender = MALE
-		flags = HAIR_VERY_SHORT
-
-	undercut1
-		name = "Undercut"
-		icon_state = "hair_undercut1"
-		gender = MALE
-		flags = HAIR_VERY_SHORT
-
-	undercut2
-		name = "Undercut Swept Right"
-		icon_state = "hair_undercut2"
-		gender = MALE
-		flags = HAIR_VERY_SHORT
-
-	undercut3
-		name = "Undercut Swept Left"
-		icon_state = "hair_undercut3"
-		gender = MALE
-		flags = HAIR_VERY_SHORT
-
 	partfade
 		name = "Parted Fade"
 		icon_state = "hair_shavedpart"
 		gender = MALE
 		flags = HAIR_VERY_SHORT
 
-	hightight
-		name = "High and Tight"
-		icon_state = "hair_hightight"
+	pixie_cut
+		name = "Pixie Cut"
+		icon_state = "hair_pixie"
+
+	quiff
+		name = "Quiff"
+		icon_state = "hair_quiff"
+
+	reversemohawk
+		name = "Reverse Mohawk"
+		icon_state = "hair_reversemohawk"
+
+
+	rows
+		name = "Rows"
+		icon_state = "hair_rows1"
 		flags = HAIR_VERY_SHORT
+
+	rows2
+		name = "Rows 2"
+		icon_state = "hair_rows2"
+		flags = HAIR_TIEABLE
 
 	rowbun
 		name = "Row Bun"
@@ -685,19 +595,128 @@
 		icon_state = "hair_shavedmohawk"
 		flags = HAIR_VERY_SHORT
 
-	topknot
-		name = "Topknot"
-		icon_state = "hair_topknot"
-		flags = HAIR_TIEABLE
-
 	ronin
 		name = "Ronin"
 		icon_state = "hair_ronin"
 		flags = HAIR_TIEABLE
 
-	bowlcut2
-		name = "Bowl2"
-		icon_state = "hair_bowlcut2"
+	rosa
+		name = "Rosa"
+		icon_state = "hair_rosa"
+
+	sideponytail
+		name = "Side Ponytail"
+		icon_state = "hair_stail"
+		flags = HAIR_TIEABLE
+
+	sideponytail4
+		name = "Side Ponytail 2"
+		icon_state = "hair_ponytailf"
+		flags = HAIR_TIEABLE
+
+	sideponytail2
+		name = "Side Ponytail 3"
+		icon_state = "hair_oneshoulder"
+		flags = HAIR_TIEABLE
+
+	sideponytail3
+		name = "Side Ponytail 4"
+		icon_state = "hair_tressshoulder"
+		flags = HAIR_TIEABLE
+
+	spikyponytail
+		name = "Spiky Ponytail"
+		icon_state = "hair_spikyponytail"
+		flags = HAIR_TIEABLE
+
+	sleeze
+		name = "Sleeze"
+		icon_state = "hair_sleeze"
+		flags = HAIR_VERY_SHORT
+
+	shavehair
+		name = "Shaved"
+		icon_state = "hair_shaved"
+		flags = HAIR_VERY_SHORT
+
+	short
+		name = "Short Elegant"
+		icon_state = "hair_a"
+		flags = HAIR_VERY_SHORT
+
+	short2
+		name = "Short Scruffy"
+		icon_state = "hair_shorthair3"
+		flags = HAIR_VERY_SHORT
+
+	short3
+		name = "Short Female"
+		icon_state = "hair_shorthair4"
+		flags = HAIR_VERY_SHORT
+
+	shortbangs
+		name = "Short Bangs"
+		icon_state = "hair_shortbangs"
+
+	spiky
+		name = "Spiky"
+		icon_state = "hair_spikey"
+		species_allowed = list("Human","Promethean","Vatborn","Unathi")
+
+	shorthime
+		name = "Short Hime Cut"
+		icon_state = "hair_shorthime"
+		flags = HAIR_TIEABLE
+
+	shortovereye
+		name = "Overeye Short"
+		icon_state = "hair_shortovereye"
+
+	skinhead
+		name = "Skinhead"
+		icon_state = "hair_skinhead"
+		flags = HAIR_VERY_SHORT
+
+	scully
+		name = "Scully"
+		icon_state = "hair_scully"
+
+	shy
+		name = "Shy"
+		icon_state = "hair_shy"
+
+	sargeant
+		name = "Sargeant"
+		icon_state = "hair_sargeant"
+		flags = HAIR_VERY_SHORT
+
+	twintail
+		name = "Twintail"
+		icon_state = "hair_twintail"
+		flags = HAIR_TIEABLE
+
+	trimflat
+		name = "Trimmed Flat Top"
+		icon_state = "hair_trimflat"
+		gender = MALE
+		flags = HAIR_VERY_SHORT
+
+	trimmed
+		name = "Trimmed"
+		icon_state = "hair_trimmed"
+		gender = MALE
+		flags = HAIR_VERY_SHORT
+
+	tightbun
+		name = "Tight Bun"
+		icon_state = "hair_tightbun"
+		gender = FEMALE
+		flags = HAIR_VERY_SHORT | HAIR_TIEABLE
+
+	topknot
+		name = "Topknot"
+		icon_state = "hair_topknot"
+		flags = HAIR_TIEABLE
 
 	thinning
 		name = "Thinning"
@@ -714,72 +733,63 @@
 		icon_state = "hair_thinningrear"
 		flags = HAIR_VERY_SHORT
 
-	manbun
-		name = "Manbun"
-		icon_state = "hair_manbun"
+	updo
+		name = "Updo"
+		icon_state = "hair_updo"
 		flags = HAIR_TIEABLE
 
-	shy
-		name = "Shy"
-		icon_state = "hair_shy"
+	unkept
+		name = "Unkept"
+		icon_state = "hair_unkept"
 
-	jade
-		name = "Jade"
-		icon_state = "hair_jade"
+	undercut1
+		name = "Undercut"
+		icon_state = "hair_undercut1"
+		gender = MALE
+		flags = HAIR_VERY_SHORT
 
-	country
-		name = "Country"
-		icon_state = "hair_country"
+	undercut2
+		name = "Undercut Swept Right"
+		icon_state = "hair_undercut2"
+		gender = MALE
+		flags = HAIR_VERY_SHORT
 
-	rosa
-		name = "Rosa"
-		icon_state = "hair_rosa"
+	undercut3
+		name = "Undercut Swept Left"
+		icon_state = "hair_undercut3"
+		gender = MALE
+		flags = HAIR_VERY_SHORT
 
-	dave
-		name = "Dave"
-		icon_state = "hair_dave"
+	veryshortovereyealternate
+		name = "Very Short Overeye Alternate"
+		icon_state = "hair_veryshortovereyealternate"
 
-	mohawkunshaven
-		name = "Unshaven Mohawk"
-		icon_state = "hair_unshaven_mohawk"
+	veryshortovereye
+		name = "Very Short Overeye"
+		icon_state = "hair_veryshortovereye"
 
-	belenko
-		name = "Belenko"
-		icon_state = "hair_belenko"
+	vegeta
+		name = "Vegeta"
+		icon_state = "hair_toriyama2"
+
+	volaju
+		name = "Volaju"
+		icon_state = "hair_volaju"
 		flags = HAIR_TIEABLE
 
-	belenkotied
-		name = "Belenko Tied"
-		icon_state = "hair_belenkotied"
+	wisp
+		name = "Wisp"
+		icon_state = "hair_wisp"
 		flags = HAIR_TIEABLE
 
-	belenkotied
-		name = "Supernova"
-		icon_state = "hair_supernova"
+		zieglertail
+		name = "Ziegler Tail"
+		icon_state = "hair_ziegler"
 		flags = HAIR_TIEABLE
 
-	keanu
-		name = "Keanu"
-		icon_state = "hair_keanu"
-		flags = HAIR_TIEABLE			//or any other flags you want, this isn't required.
-
-	hedgehog
-		name = "Hedgehog Hair"
-		icon_state = "hair_hedgehog"
-
-	pixie_cut
-		name = "Pixie Cut"
-		icon_state = "hair_pixie"
-
-	business_2
-		name = "Business Hair 2"
-		icon_state = "hair_business2"
-		flags = HAIR_TIEABLE
-
-	long_hair_3
-		name = "Long Hair 3"
-		icon_state = "hair_long3"
-		flags = HAIR_TIEABLE
+		eighties
+		name = "80's"
+		icon_state = "hair_80s"
 
 /*
 ///////////////////////////////////
@@ -793,80 +803,112 @@
 
 	icon = 'icons/mob/Human_face.dmi'
 
-	shaved
-		name = "Shaved"
-		icon_state = "bald"
-		gender = NEUTER
-		species_allowed = list("Human","Vatborn","Unathi","Tajara","Skrell", "Machine","Teshari", "Vox","Promethean")
-
-	watson
-		name = "Watson Mustache"
-		icon_state = "facial_watson"
-
-	hogan
-		name = "Hulk Hogan Mustache"
-		icon_state = "facial_hogan" //-Neek
-
-	vandyke
-		name = "Van Dyke Mustache"
-		icon_state = "facial_vandyke"
+	abe
+		name = "Abraham Lincoln Beard"
+		icon_state = "facial_abe"
 
 	chaplin
 		name = "Square Mustache"
 		icon_state = "facial_chaplin"
 
-	selleck
-		name = "Selleck Mustache"
-		icon_state = "facial_selleck"
+	chinstrap
+		name = "Chinstrap"
+		icon_state = "facial_chin"
 
-	neckbeard
-		name = "Neckbeard"
-		icon_state = "facial_neckbeard"
+	croppedbeard
+		name = "Full Cropped Beard"
+		icon_state = "facial_croppedfullbeard"
 
-	fullbeard
-		name = "Full Beard"
-		icon_state = "facial_fullbeard"
+	chinless
+		name = "Chinless Beard"
+		icon_state = "facial_chinlessbeard"
 
-	longbeard
-		name = "Long Beard"
-		icon_state = "facial_longbeard"
-
-	vlongbeard
-		name = "Very Long Beard"
-		icon_state = "facial_wise"
+	dwarf
+		name = "Dwarf Beard"
+		icon_state = "facial_dwarf"
 
 	elvis
 		name = "Elvis Sideburns"
 		icon_state = "facial_elvis"
 		species_allowed = list("Human","Promethean","Vatborn","Unathi")
 
-	abe
-		name = "Abraham Lincoln Beard"
-		icon_state = "facial_abe"
-
-	chinstrap
-		name = "Chinstrap"
-		icon_state = "facial_chin"
-
-	hip
-		name = "Hipster Beard"
-		icon_state = "facial_hip"
+	fullbeard
+		name = "Full Beard"
+		icon_state = "facial_fullbeard"
 
 	gt
 		name = "Goatee"
 		icon_state = "facial_gt"
 
+	hogan
+		name = "Hulk Hogan Mustache"
+		icon_state = "facial_hogan"
+
+	hip
+		name = "Hipster Beard"
+		icon_state = "facial_hip"
+
 	jensen
-		name = "Adam Jensen Beard"
+		name = "Jensen Beard"
 		icon_state = "facial_jensen"
+
+	longbeard
+		name = "Long Beard"
+		icon_state = "facial_longbeard"
+
+	mutton
+		name = "Mutton Chops"
+		icon_state = "facial_mutton"
+
+	muttonstache
+		name = "Mutton Chops and Moustache"
+		icon_state = "facial_muttonmus"
+
+	moonshiner
+		name = "Moonshiner"
+		icon_state = "facial_moonshiner"
+
+	martial
+		name = "Martial Artist"
+		icon_state = "facial_martialartist"
+
+	neckbeard
+		name = "Neckbeard"
+		icon_state = "facial_neckbeard"
+
+	shaved
+		name = "Shaved"
+		icon_state = "bald"
+		gender = NEUTER
+		species_allowed = list("Human","Vatborn","Unathi","Tajara","Skrell", "Machine","Teshari", "Vox","Promethean")
+
+	selleck
+		name = "Selleck Mustache"
+		icon_state = "facial_selleck"
+
+	tribeard
+		name = "Tribeard"
+		icon_state = "facial_tribeard"
+
+	vandyke
+		name = "Van Dyke Mustache"
+		icon_state = "facial_vandyke"
+
+	vlongbeard
+		name = "Very Long Beard"
+		icon_state = "facial_wise"
 
 	volaju
 		name = "Volaju"
 		icon_state = "facial_volaju"
 
-	dwarf
-		name = "Dwarf Beard"
-		icon_state = "facial_dwarf"
+	watson
+		name = "Watson Mustache"
+		icon_state = "facial_watson"
+
+	walrus
+		name = "Walrus Moustache"
+		icon_state = "facial_walrus"
 
 	threeOclock
 		name = "3 O'clock Shadow"
@@ -892,37 +934,6 @@
 		name = "7 O'clock Shadow and Moustache"
 		icon_state = "facial_7oclockmoustache"
 
-	mutton
-		name = "Mutton Chops"
-		icon_state = "facial_mutton"
-
-	muttonstache
-		name = "Mutton Chops and Moustache"
-		icon_state = "facial_muttonmus"
-
-	walrus
-		name = "Walrus Moustache"
-		icon_state = "facial_walrus"
-
-	croppedbeard
-		name = "Full Cropped Beard"
-		icon_state = "facial_croppedfullbeard"
-
-	chinless
-		name = "Chinless Beard"
-		icon_state = "facial_chinlessbeard"
-
-	tribeard
-		name = "Tribeard"
-		icon_state = "facial_tribeard"
-
-	moonshiner
-		name = "Moonshiner"
-		icon_state = "facial_moonshiner"
-
-	martial
-		name = "Martial Artist"
-		icon_state = "facial_martialartist"
 /*
 ///////////////////////////////////
 /  =---------------------------=  /

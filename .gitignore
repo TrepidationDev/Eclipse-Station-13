@@ -17,3 +17,7 @@ code/game/gamemodes/technomancer/spells/projectile/overload.dm
 code/game/gamemodes/technomancer/spells/projectile/overload.dm
 code/modules/client/preference_setup/loadout/loadout_xeno.dm
 temp.dmi
+maps/northern_star/polarisbeforestairs.dmm
+maps/northern_star/polarisdockdone.dmm
+maps/northern_star/polarisresidentcopy.dmm
+maps/northern_star/polarismaint.dmm

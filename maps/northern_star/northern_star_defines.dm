@@ -1,10 +1,11 @@
 
 #define Z_LEVEL_MAIN_NORTHERN_STAR					1
-#define Z_LEVEL_CENTCOM_NORTHERN_STAR				2
-#define Z_LEVEL_TELECOMMS_NORTHERN_STAR				3
-#define Z_LEVEL_ABANDONED_ASTEROID_NORTHERN_STAR	4
-#define Z_LEVEL_MINING_NORTHERN_STAR				5
-#define Z_LEVEL_EMPTY_NORTHERN_STAR					6
+#define Z_LEVEL_RESIDENTIAL_NORTHERN_STAR			2
+#define Z_LEVEL_CENTCOM_NORTHERN_STAR				3
+#define Z_LEVEL_TELECOMMS_NORTHERN_STAR				4
+#define Z_LEVEL_ABANDONED_ASTEROID_NORTHERN_STAR	5
+#define Z_LEVEL_MINING_NORTHERN_STAR				6
+#define Z_LEVEL_EMPTY_NORTHERN_STAR					7
 
 /datum/map/northern_star
 	name = "Northern Star"
@@ -24,7 +25,27 @@
 	company_name  = "NanoTrasen"
 	company_short = "NT"
 	starsys_name  = "Vir"
+/*
+	station_levels = list(
+		Z_LEVEL_MAIN_NORTHERN_STAR,
+		Z_LEVEL_TOP_NORTHERN_STAR
+		)
 
+	admin_levels = list(Z_LEVEL_CENTCOM_NORTHERN_STAR)
+	contact_levels = list(
+		Z_LEVEL_MAIN_NORTHERN_STAR,
+		Z_LEVEL_CENTCOM_NORTHERN_STAR,
+		Z_LEVEL_TOP_NORTHERN_STAR
+		)
+
+	player_levels = list(
+		Z_LEVEL_MAIN_NORTHERN_STAR,
+		Z_LEVEL_TELECOMMS_NORTHERN_STAR,
+		Z_LEVEL_ABANDONED_ASTEROID_NORTHERN_STAR,
+		Z_LEVEL_MINING_NORTHERN_STAR,
+		Z_LEVEL_EMPTY_NORTHERN_STAR
+		)
+*/
 	shuttle_docked_message = "The scheduled shuttle to the %dock_name% has docked with the station at docks one and two. It will depart in approximately %ETD%."
 	shuttle_leaving_dock = "The Crew Transfer Shuttle has left the station. Estimate %ETA% until the shuttle docks at %dock_name%."
 	shuttle_called_message = "A crew transfer to %Dock_name% has been scheduled. The shuttle has been called. Those leaving should proceed to docks one and two in approximately %ETA%."
@@ -70,9 +91,16 @@
 /datum/map_z_level/northern_star/main
 	z = Z_LEVEL_MAIN_NORTHERN_STAR
 	name = "Main"
-	flags = MAP_LEVEL_STATION|MAP_LEVEL_CONTACT|MAP_LEVEL_PLAYER
+	flags = MAP_LEVEL_STATION|MAP_LEVEL_CONTACT|MAP_LEVEL_PLAYER|MAP_LEVEL_CONSOLES
 	transit_chance = 5
 	base_turf = /turf/simulated/mineral/floor
+
+/datum/map_z_level/northern_star/main/top
+	z = Z_LEVEL_RESIDENTIAL_NORTHERN_STAR
+	name = "Top"
+	flags = MAP_LEVEL_STATION|MAP_LEVEL_CONTACT|MAP_LEVEL_PLAYER|MAP_LEVEL_CONSOLES
+	transit_chance = 5
+	base_turf = /turf/simulated/open
 
 /datum/map_z_level/northern_star/centcomm
 	z = Z_LEVEL_CENTCOM_NORTHERN_STAR
