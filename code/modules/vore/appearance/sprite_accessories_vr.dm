@@ -37,6 +37,18 @@
 	icon_state = "alurane-ears"
 	ckeys_allowed = list("natje")
 	
+/datum/sprite_accessory/ears/antennae
+	name = "antennae, colorable"
+	desc = ""
+	icon_state = "antennae"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	
+/datum/sprite_accessory/ears/lilimoth_antennae
+	name = "citheronia antennae"
+	desc = ""
+	icon_state = "lilimoth_antennae"
+
 /datum/sprite_accessory/ears/smallantlers
 	name = "small antlers"
 	desc = ""
@@ -52,13 +64,6 @@
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "deer"
 
-/datum/sprite_accessory/ears/antennae
-	name = "antennae, colorable"
-	desc = ""
-	icon_state = "antennae"
-	do_colouration = 1
-	color_blend_mode = ICON_MULTIPLY
-	
 /datum/sprite_accessory/ears/antlers
 	name = "antlers"
 	desc = ""
@@ -73,6 +78,11 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "antlers_mark"
+	
+/datum/sprite_accessory/ears/aronai
+	name = "aronai ears/head"
+	desc = ""
+	icon_state = "aronai"
 
 /datum/sprite_accessory/ears/smallbear
 	name = "small bear"
@@ -155,6 +165,11 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	
+/datum/sprite_accessory/ears/molenar_deathclaw
+	name = "deathclaw ears"
+	desc = ""
+	icon_state = "molenar-deathclaw"
+
 /datum/sprite_accessory/ears/deer
 	name = "deer ears"
 	desc = ""
@@ -214,13 +229,16 @@
 	desc = ""
 	icon_state = "foxears"
 	
-/datum/sprite_accessory/ears/foxearshc
-	name = "highlander zorren ears, colorable"
+/datum/sprite_accessory/ears/runac
+	name = "fennecsune ears"
 	desc = ""
-	icon_state = "foxearshc"
-	do_colouration = 1
-	color_blend_mode = ICON_MULTIPLY
+	icon_state = "runac"
 
+/datum/sprite_accessory/ears/fenears
+	name = "flatland zorren ears"
+	desc = ""
+	icon_state = "fenears"
+	
 /datum/sprite_accessory/ears/fenearshc
 	name = "flatland zorren ears, colorable"
 	desc = ""
@@ -229,16 +247,38 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
-/datum/sprite_accessory/ears/fenears
-	name = "flatland zorren ears"
+/datum/sprite_accessory/ears/foxearshc
+	name = "highlander zorren ears, colorable"
 	desc = ""
-	icon_state = "fenears"
+	icon_state = "foxearshc"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	
+/datum/sprite_accessory/ears/miria_fluffdragon
+	name = "fluffdragon ears"
+	desc = ""
+	icon_state = "miria-fluffdragonears"
 
 /datum/sprite_accessory/ears/mouse_grey
 	name = "mouse, grey"
 	desc = ""
 	icon_state = "mouse-grey"
+	
+/datum/sprite_accessory/ears/mousehc
+	name = "mouse, colorable"
+	desc = ""
+	icon_state = "mouse"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "mouseinner"
 
+/datum/sprite_accessory/ears/mousehcno
+	name = "mouse, colorable, no inner"
+	desc = ""
+	icon_state = "mouse"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	
 /datum/sprite_accessory/ears/right_robot
 	name = "right synth, colorable"
 	desc = ""
@@ -271,20 +311,10 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
-/datum/sprite_accessory/ears/mousehc
-	name = "mouse, colorable"
+/datum/sprite_accessory/ears/shock
+	name = "pharoah hound ears"
 	desc = ""
-	icon_state = "mouse"
-	do_colouration = 1
-	color_blend_mode = ICON_MULTIPLY
-	extra_overlay = "mouseinner"
-
-/datum/sprite_accessory/ears/mousehcno
-	name = "mouse, colorable, no inner"
-	desc = ""
-	icon_state = "mouse"
-	do_colouration = 1
-	color_blend_mode = ICON_MULTIPLY
+	icon_state = "shock"
 
 /datum/sprite_accessory/ears/squirrelhc
 	name = "squirrel, colorable"
@@ -292,6 +322,11 @@
 	icon_state = "squirrel"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
+	
+/datum/sprite_accessory/ears/holly
+	name = "tigress ears"
+	desc = ""
+	icon_state = "tigressears"
 
 /datum/sprite_accessory/ears/kittyhc
 	name = "kitty, colorable"
@@ -300,14 +335,21 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "kittyinner"
-
-/datum/sprite_accessory/ears/otie
-	name = "otie, colorable"
+	
+/datum/sprite_accessory/ears/miria_kitsune
+	name = "kitsune ears"
 	desc = ""
-	icon_state = "otie"
-	do_colouration = 1
-	color_blend_mode = ICON_MULTIPLY
-	extra_overlay = "otie-inner"
+	icon_state = "miria-kitsuneears"
+
+/datum/sprite_accessory/ears/molenar_kitsune
+	name = "quintail kitsune ears"
+	desc = ""
+	icon_state = "molenar-kitsune"
+	
+/datum/sprite_accessory/ears/rosey
+	name = "tritail kitsune ears"
+	desc = ""
+	icon_state = "rosey"
 
 /datum/sprite_accessory/ears/sleek
 	name = "sleek ears"
@@ -362,6 +404,11 @@
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "vulp-inner"
 	
+/datum/sprite_accessory/ears/kerena
+	name = "wingwolf ears"
+	desc = ""
+	icon_state = "kerena"
+
 /datum/sprite_accessory/ears/wolfhc
 	name = "wolf, colorable"
 	desc = ""
@@ -387,65 +434,10 @@
 
 // Special snowflake ears go below here.
 
-/datum/sprite_accessory/ears/molenar_kitsune
-	name = "quintail kitsune ears"
-	desc = ""
-	icon_state = "molenar-kitsune"
-
-/datum/sprite_accessory/ears/lilimoth_antennae
-	name = "citheronia antennae"
-	desc = ""
-	icon_state = "lilimoth_antennae"
-
-/datum/sprite_accessory/ears/molenar_deathclaw
-	name = "deathclaw ears"
-	desc = ""
-	icon_state = "molenar-deathclaw"
-
-/datum/sprite_accessory/ears/miria_fluffdragon
-	name = "fluffdragon ears"
-	desc = ""
-	icon_state = "miria-fluffdragonears"
-
-/datum/sprite_accessory/ears/miria_kitsune
-	name = "kitsune ears"
-	desc = ""
-	icon_state = "miria-kitsuneears"
-
-/datum/sprite_accessory/ears/runac
-	name = "fennecsune ears"
-	desc = ""
-	icon_state = "runac"
-
-/datum/sprite_accessory/ears/kerena
-	name = "wingwolf ears"
-	desc = ""
-	icon_state = "kerena"
-
-/datum/sprite_accessory/ears/rosey
-	name = "tritail kitsune ears"
-	desc = ""
-	icon_state = "rosey"
-
-/datum/sprite_accessory/ears/aronai
-	name = "aronai ears/head"
-	desc = ""
-	icon_state = "aronai"
-
-/datum/sprite_accessory/ears/holly
-	name = "tigress ears"
-	desc = ""
-	icon_state = "tigressears"
-
 /datum/sprite_accessory/ears/molenar_inkling
 	name = "teal mature inkling hair"
 	desc = ""
 	icon_state = "molenar-tentacle"
-
-/datum/sprite_accessory/ears/shock
-	name = "pharoah hound ears"
-	desc = ""
-	icon_state = "shock"
 
 
 
