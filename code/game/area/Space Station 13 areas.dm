@@ -2003,6 +2003,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Garden"
 	icon_state = "garden"
 
+/area/hydroponics/garden_residential
+	name = "\improper Residential Garden"
+	icon_state = "garden"
+
 // SUPPLY
 
 /area/quartermaster
