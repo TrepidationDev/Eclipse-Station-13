@@ -20,11 +20,12 @@
 	use_power = 1
 	idle_power_usage = 10
 	circuit =  /obj/item/weapon/circuitboard/status_display
-	var/mode = 1	// 0 = Blank
+	var/mode = 5	// 0 = Blank
 					// 1 = Shuttle timer
 					// 2 = Arbitrary message(s)
 					// 3 = alert picture
 					// 4 = Supply shuttle timer
+					// 5 = Default N
 
 	var/picture_state	// icon_state of alert picture
 	var/message1 = ""	// message line 1
@@ -47,6 +48,7 @@
 	var/const/STATUS_DISPLAY_MESSAGE = 2
 	var/const/STATUS_DISPLAY_ALERT = 3
 	var/const/STATUS_DISPLAY_TIME = 4
+	var/const/STATUS_DISPLAY_DEFAULT = 5
 	var/const/STATUS_DISPLAY_CUSTOM = 99
 
 /obj/machinery/status_display/Destroy()
@@ -142,6 +144,9 @@
 			message1 = "TIME"
 			message2 = stationtime2text()
 			update_display(message1, message2)
+			return 1
+		if(STATUS_DISPLAY_DEFAULT)
+			set_picture("default")
 			return 1
 	return 0
 

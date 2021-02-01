@@ -273,6 +273,17 @@
 	icon_state = "neutral"
 	initial_flooring = /decl/flooring/tiling/neutral
 
+/turf/simulated/floor/tiled/neutral/corner
+	name = "light floor"
+	icon_state = "neutralcorner"
+	initial_flooring = /decl/flooring/tiling/neutral/corner
+
+/turf/simulated/floor/tiled/neutral/side
+	name = "light floor"
+	icon_state = "neutralside"
+	initial_flooring = /decl/flooring/tiling/neutral/side
+
+
 /turf/simulated/floor/tiled/red
 	name = "red floor"
 	color = COLOR_RED_GRAY

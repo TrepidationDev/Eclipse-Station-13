@@ -274,6 +274,16 @@ var/list/flooring_types
 	icon_base = "neutral"
 	build_type = /obj/item/stack/tile/floor/steel
 
+/decl/flooring/tiling/neutral/corner
+	name = "floor"
+	icon_base = "neutralcorner"
+	build_type = /obj/item/stack/tile/floor/steel
+
+/decl/flooring/tiling/neutral/side
+	name = "floor"
+	icon_base = "neutralside"
+	build_type = /obj/item/stack/tile/floor/steel
+
 /decl/flooring/tiling/freezer
 	name = "floor"
 	desc = "Don't slip."

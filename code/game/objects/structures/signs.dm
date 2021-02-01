@@ -132,6 +132,14 @@
 	..()
 	desc = "A warning sign which reads '[name]'."
 
+/obj/structure/sign/chinese
+	name = "Katsuro Dragon"
+	desc = "A flashing restaurant sign."
+	icon_state = "chinese"
+	light_color = "#d00023"
+	light_power = 1
+	light_range = 3
+
 /obj/structure/sign/warning/airlock
 	name = "\improper EXTERNAL AIRLOCK"
 	icon_state = "doors"
@@ -351,6 +359,18 @@
 	name = "\improper Cargo department"
 	desc = "A direction sign, pointing out which way the Cargo department is."
 	icon_state = "direction_crg"
+
+/obj/structure/sign/terminal1
+	name = "travel monitor"
+	desc = "This sign currently displays the designated transfer shuttle for the Trepidation."
+	icon = 'icons/obj/decals64.dmi'
+	icon_state = "terminal1"
+
+/obj/structure/sign/terminal2
+	name = "travel monitor"
+	desc = "This sign currently displays listings for other stations. But why would you leave?"
+	icon = 'icons/obj/decals64.dmi'
+	icon_state = "terminal2"
 
 // VOREStation Edit - New signs for us
 /obj/structure/sign/directions/command
