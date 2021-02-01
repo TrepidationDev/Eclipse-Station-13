@@ -801,9 +801,9 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Incinerator"
 	icon_state = "disposal"
 
-/area/maintenance/library
-	name = "Library Maintenance"
-	icon_state = "maint_library"
+/area/maintenance/fstar_solar
+	name = "Fore Starboard Solar Maintenance"
+	icon_state = "maint_engineering"
 
 /area/maintenance/locker
 	name = "Locker Room Maintenance"
@@ -2003,9 +2003,8 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Garden"
 	icon_state = "garden"
 
-/area/hydroponics/garden_residential
+/area/hydroponics/garden/residential
 	name = "\improper Residential Garden"
-	icon_state = "garden"
 
 // SUPPLY
 
