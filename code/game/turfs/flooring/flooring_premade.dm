@@ -269,6 +269,11 @@
 	icon_state = "dark"
 	initial_flooring = /decl/flooring/tiling/dark
 
+/turf/simulated/floor/tiled/dark2
+	name = "dark floor"
+	icon_state = "dark2"
+	initial_flooring = /decl/flooring/tiling/dark2
+
 /turf/simulated/floor/tiled/hydro
 	name = "hydro floor"
 	icon_state = "hydrofloor"
@@ -350,6 +355,16 @@
 	name = "checkered floor"
 	icon_state = "checker2"
 	initial_flooring = /decl/flooring/tiling/checker2
+
+/turf/simulated/floor/tiled/checker2alt
+	name = "floor"
+	icon_state = "checker2alt"
+	initial_flooring = /decl/flooring/tiling/checker2alt
+
+/turf/simulated/floor/tiled/checker3
+	name = "checkered floor"
+	icon_state = "checker3"
+	initial_flooring = /decl/flooring/tiling/checker3
 
 
 //ATMOS PREMADES

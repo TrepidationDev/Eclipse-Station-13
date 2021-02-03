@@ -271,6 +271,14 @@ var/list/flooring_types
 	flags = TURF_REMOVE_CROWBAR
 	build_type = /obj/item/stack/tile/floor/dark
 
+/decl/flooring/tiling/dark2
+	name = "floor"
+	desc = "How ominous."
+	icon_base = "dark2"
+	has_damage_range = null
+	flags = TURF_REMOVE_CROWBAR
+	build_type = /obj/item/stack/tile/floor/dark
+
 /decl/flooring/tiling/hydro
 	name = "floor"
 	icon_base = "hydrofloor"
@@ -299,6 +307,16 @@ var/list/flooring_types
 /decl/flooring/tiling/checker2
 	name = "floor"
 	icon_base = "checker2"
+	build_type = /obj/item/stack/tile/floor/steel
+
+/decl/flooring/tiling/checker2alt
+	name = "floor"
+	icon_base = "checker2alt"
+	build_type = /obj/item/stack/tile/floor/steel
+
+/decl/flooring/tiling/checker3
+	name = "floor"
+	icon_base = "checker3"
 	build_type = /obj/item/stack/tile/floor/steel
 
 /decl/flooring/tiling/freezer
