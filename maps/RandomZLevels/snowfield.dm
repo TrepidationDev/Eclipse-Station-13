@@ -167,3 +167,8 @@
 /obj/effect/floor_decal/derelict/d16
 	name = "derelict16"
 	icon_state = "derelict16"
+
+/obj/effect/floor_decal/trepidation
+	name = "NSS Trepidation"
+	icon = 'icons/obj/decalbig.dmi'
+	icon_state = "trepidation"

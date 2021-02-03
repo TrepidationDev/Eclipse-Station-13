@@ -8,8 +8,8 @@
 #define Z_LEVEL_RESIDENTIAL_NORTHERN_STAR			7
 
 /datum/map/northern_star
-	name = "Northern Star"
-	full_name = "NCS Northern Star"
+	name = "Trepidation"
+	full_name = "NSS Trepidation"
 	path = "northern_star"
 
 	lobby_icon = 'icons/misc/title.dmi'
@@ -17,8 +17,8 @@
 
 	zlevel_datum_type = /datum/map_z_level/northern_star
 
-	station_name  = "NCS Northern Star"
-	station_short = "Northern Star"
+	station_name  = "NSS Trepidation"
+	station_short = "Trepidation"
 	dock_name     = "Vir Interstellar Spaceport"
 	boss_name     = "Central Command"
 	boss_short    = "CentCom"
@@ -74,7 +74,7 @@
 							NETWORK_INTERROGATION
 							)
 
-	allowed_spawns = list("Arrivals Shuttle","Gateway", "Cryogenic Storage", "Cyborg Storage", "Elevator")
+	allowed_spawns = list("Arrivals Shuttle","Gateway", "Cryogenic Storage", "Cyborg Storage")
 
 
 /datum/map/northern_star/perform_map_generation()

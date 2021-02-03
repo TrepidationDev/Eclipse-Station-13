@@ -94,6 +94,12 @@
 	icon_state = "grass0"
 	initial_flooring = /decl/flooring/grass
 
+/turf/simulated/floor/dirt
+	name = "dirt"
+	icon = 'icons/turf/flooring/grass.dmi'
+	icon_state = "dirt"
+	initial_flooring = /decl/flooring/dirt
+
 /turf/simulated/floor/tiled
 	name = "floor"
 	icon = 'icons/turf/flooring/tiles_vr.dmi'
@@ -334,6 +340,17 @@
 	icon = 'icons/turf/flooring/linoleum.dmi'
 	icon_state = "lino"
 	initial_flooring = /decl/flooring/linoleum
+
+/turf/simulated/floor/tiled/checker1
+	name = "checkered floor"
+	icon_state = "checker1"
+	initial_flooring = /decl/flooring/tiling/checker1
+
+/turf/simulated/floor/tiled/checker2
+	name = "checkered floor"
+	icon_state = "checker2"
+	initial_flooring = /decl/flooring/tiling/checker2
+
 
 //ATMOS PREMADES
 /turf/simulated/floor/reinforced/airless

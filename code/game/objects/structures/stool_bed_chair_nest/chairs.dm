@@ -95,6 +95,36 @@
 	base_icon = "shuttle_chair"
 	applies_material_colour = 0
 
+/obj/structure/bed/chair/metal
+	icon_state = "chair_gray"
+	base_icon = "chair_gray"
+	color = null
+	applies_material_colour = 0
+
+/obj/structure/bed/chair/metal/blue
+	icon_state = "chair_blue"
+	base_icon = "chair_blue"
+
+/obj/structure/bed/chair/metal/yellow
+	icon_state = "chair_yellow"
+	base_icon = "chair_yellow"
+
+/obj/structure/bed/chair/metal/red
+	icon_state = "chair_red"
+	base_icon = "chair_red"
+
+/obj/structure/bed/chair/metal/green
+	icon_state = "chair_green"
+	base_icon = "chair_green"
+
+/obj/structure/bed/chair/metal/white
+	icon_state = "chair_white"
+	base_icon = "chair_white"
+
+/obj/structure/bed/chair/metal/black
+	icon_state = "chair_black"
+	base_icon = "chair_black"
+
 // Leaving this in for the sake of compilation.
 /obj/structure/bed/chair/comfy
 	desc = "It's a chair. It looks comfy."

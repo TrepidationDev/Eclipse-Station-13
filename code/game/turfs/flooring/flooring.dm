@@ -54,6 +54,13 @@ var/list/flooring_types
 	flags = TURF_HAS_EDGES | TURF_REMOVE_SHOVEL
 	build_type = /obj/item/stack/tile/grass
 
+/decl/flooring/dirt
+	name = "dirt"
+	icon = 'icons/turf/flooring/grass.dmi'
+	icon_base = "dirt"
+	flags = TURF_HAS_EDGES | TURF_REMOVE_SHOVEL
+	build_type = null
+
 /decl/flooring/asteroid
 	name = "coarse sand"
 	desc = "Gritty and unpleasant."
@@ -282,6 +289,16 @@ var/list/flooring_types
 /decl/flooring/tiling/neutral/side
 	name = "floor"
 	icon_base = "neutralside"
+	build_type = /obj/item/stack/tile/floor/steel
+
+/decl/flooring/tiling/checker1
+	name = "floor"
+	icon_base = "checker1"
+	build_type = /obj/item/stack/tile/floor/steel
+
+/decl/flooring/tiling/checker2
+	name = "floor"
+	icon_base = "checker2"
 	build_type = /obj/item/stack/tile/floor/steel
 
 /decl/flooring/tiling/freezer
